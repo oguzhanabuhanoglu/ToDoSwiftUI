@@ -104,9 +104,6 @@
 			children = (
 				BF7750DD2BDAD0CF001AED00 /* Components */,
 				BF8B97892BDA4EF000F4D1F7 /* General */,
-				BF8B97772BD9646100F4D1F7 /* learningSwiftUIApp.swift */,
-				BF8B977B2BD9646200F4D1F7 /* Assets.xcassets */,
-				BF8B97852BDA4D9100F4D1F7 /* GoogleService-Info.plist */,
 				BF8B978C2BDA4F3400F4D1F7 /* ViewModels */,
 				BF8B978D2BDA4F3B00F4D1F7 /* Models */,
 				BF8B97882BDA4EE300F4D1F7 /* Views */,
@@ -140,6 +137,9 @@
 		BF8B97892BDA4EF000F4D1F7 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				BF8B97772BD9646100F4D1F7 /* learningSwiftUIApp.swift */,
+				BF8B977B2BD9646200F4D1F7 /* Assets.xcassets */,
+				BF8B97852BDA4D9100F4D1F7 /* GoogleService-Info.plist */,
 			);
 			path = General;
 			sourceTree = "<group>";

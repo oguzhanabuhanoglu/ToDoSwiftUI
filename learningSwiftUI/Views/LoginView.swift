@@ -9,8 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
         
@@ -23,8 +22,8 @@ struct LoginView: View {
                     
                 //Form
                 Form{
-                    TextField("Email", text: $email)
-                    SecureField("Password", text: $password)
+                    TextField("Email", text: $viewModel.email)
+                    SecureField("Password", text: $viewModel.password)
                 }.frame(height: 150)
                     .padding(.top, 70)
                 
