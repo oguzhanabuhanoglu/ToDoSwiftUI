@@ -22,13 +22,20 @@ struct LoginView: View {
                     
                 //Form
                 Form{
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundStyle(.red)
+                    }else{
+                        Text("Welcome")
+                            .foregroundStyle(.secondary)
+                    }
                     TextField("Email", text: $viewModel.email)
                     SecureField("Password", text: $viewModel.password)
-                }.frame(height: 150)
+                }.frame(height: 200)
                     .padding(.top, 70)
                 
                 //Button
-                BigButton(title: "Log In", action: {})
+                BigButton(title: "Log In", action: viewModel.LogIn)
                     
                 //Footer
                 VStack{
