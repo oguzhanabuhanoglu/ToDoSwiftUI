@@ -32,6 +32,7 @@
 		BF8B977C2BD9646200F4D1F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8B977B2BD9646200F4D1F7 /* Assets.xcassets */; };
 		BF8B977F2BD9646200F4D1F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8B977E2BD9646200F4D1F7 /* Preview Assets.xcassets */; };
 		BF8B97862BDA4D9100F4D1F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF8B97852BDA4D9100F4D1F7 /* GoogleService-Info.plist */; };
+		BF94B93C2BDC3B5000A02445 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94B93B2BDC3B5000A02445 /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		BF8B977B2BD9646200F4D1F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8B977E2BD9646200F4D1F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF8B97852BDA4D9100F4D1F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF94B93B2BDC3B5000A02445 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +104,8 @@
 		BF8B97762BD9646100F4D1F7 /* learningSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				BF7750DD2BDAD0CF001AED00 /* Components */,
 				BF8B97892BDA4EF000F4D1F7 /* General */,
+				BF7750DD2BDAD0CF001AED00 /* Components */,
 				BF8B978C2BDA4F3400F4D1F7 /* ViewModels */,
 				BF8B978D2BDA4F3B00F4D1F7 /* Models */,
 				BF8B97882BDA4EE300F4D1F7 /* Views */,
@@ -140,6 +142,7 @@
 				BF8B97772BD9646100F4D1F7 /* learningSwiftUIApp.swift */,
 				BF8B977B2BD9646200F4D1F7 /* Assets.xcassets */,
 				BF8B97852BDA4D9100F4D1F7 /* GoogleService-Info.plist */,
+				BF94B93B2BDC3B5000A02445 /* extensions.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				BF735D372BDA50DE00262927 /* MainView.swift in Sources */,
 				BF735D512BDA51C200262927 /* ProfileViewViewModel.swift in Sources */,
 				BF735D532BDA51D600262927 /* NewItemViewViewModel.swift in Sources */,
+				BF94B93C2BDC3B5000A02445 /* extensions.swift in Sources */,
 				BF735D492BDA518F00262927 /* ToDoListItem.swift in Sources */,
 				BF735D432BDA514700262927 /* ToDoListView.swift in Sources */,
 				BF735D552BDA51E700262927 /* ToDoListViewViewModel.swift in Sources */,

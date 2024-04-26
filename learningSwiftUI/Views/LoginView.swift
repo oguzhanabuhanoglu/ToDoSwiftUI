@@ -30,7 +30,11 @@ struct LoginView: View {
                             .foregroundStyle(.secondary)
                     }
                     TextField("Email", text: $viewModel.email)
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
                     SecureField("Password", text: $viewModel.password)
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
                 }.frame(height: 200)
                     .padding(.top, 70)
                 

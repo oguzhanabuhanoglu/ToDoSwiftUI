@@ -25,8 +25,14 @@ struct RegisterView: View {
                     
                     Section(header: Text("Register Form")) {
                         TextField("Enter Your Full Name", text: $viewModel.name)
+                            .autocorrectionDisabled()
+                            .autocapitalization(.none)
                         TextField("Email", text: $viewModel.email)
-                        TextField("Password", text: $viewModel.password)
+                            .autocorrectionDisabled()
+                            .autocapitalization(.none)
+                        SecureField("Password", text: $viewModel.password)
+                            .autocorrectionDisabled()
+                            .autocapitalization(.none)
                         if !viewModel.errorMessage.isEmpty {
                             Text(viewModel.errorMessage)
                                 .foregroundStyle(.red)
@@ -45,6 +51,8 @@ struct RegisterView: View {
                 
             }
         }
+        
+        
     }
 }
 
