@@ -13,6 +13,7 @@ class MainViewViewModel: ObservableObject {
     @Published var currentUserId: String = ""
     
     init(){
+        
         Auth.auth().addStateDidChangeListener { _, user in
             DispatchQueue.main.async {
                 self.currentUserId = user?.uid ?? ""
