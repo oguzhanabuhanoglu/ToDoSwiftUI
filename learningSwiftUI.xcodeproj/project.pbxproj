@@ -140,9 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				BF8B97772BD9646100F4D1F7 /* learningSwiftUIApp.swift */,
+				BF94B93B2BDC3B5000A02445 /* extensions.swift */,
 				BF8B977B2BD9646200F4D1F7 /* Assets.xcassets */,
 				BF8B97852BDA4D9100F4D1F7 /* GoogleService-Info.plist */,
-				BF94B93B2BDC3B5000A02445 /* extensions.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
