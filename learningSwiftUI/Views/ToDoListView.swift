@@ -21,7 +21,7 @@ struct ToDoListView: View {
         NavigationStack{
             VStack{
                 List(items) { item in
-                    Text(item.title)
+                    ToDoListItemView(item: item)
                 }
                 .listStyle(.plain)
                 
