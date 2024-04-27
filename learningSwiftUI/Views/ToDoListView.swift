@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ToDoListView: View {
     
-    @StateObject var viewModel = ToDoListItemViewViewModel()
+    @StateObject var viewModel = ToDoListViewViewModel()
     private let userId: String
     
     init(userId: String){
         self.userId = userId
     }
-    
+
     var body: some View {
         NavigationStack{
             VStack{
@@ -23,11 +23,17 @@ struct ToDoListView: View {
             }
             .navigationTitle("To Do")
             .toolbar{
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    //sheet open
+                    viewModel.showingNewItem = true
+                }, label: {
                     Image(systemName: "plus")
                 })
                 .bold()
             }
+            .sheet(isPresented: $viewModel.showingNewItem, content: {
+                NewItemView(newItemPresented: $viewModel.showingNewItem)
+            })
         }
     }
 }

@@ -8,11 +8,44 @@
 import SwiftUI
 
 struct NewItemView: View {
+    
+    @StateObject var viewModel = NewItemViewViewModel()
+    @Binding var newItemPresented: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack{
+                Text("New Mission")
+                    .font(.title)
+                    .bold()
+                    .padding(.top, 50)
+                Form{
+                    TextField("Title", text: $viewModel.title)
+                    DatePicker("Due Time", selection: $viewModel.dueDate)
+                        .datePickerStyle(.graphical)
+                }.frame(height: 500)
+                BigButton(title: "Save") {
+                    if viewModel.canSave() {
+                        viewModel.save()
+                        newItemPresented = false
+                    }else{
+                        viewModel.showAlert = true
+                    }
+                }
+                Spacer()
+            }
+            .alert(isPresented: $viewModel.showAlert, content: {
+                Alert(title: Text("Error"),
+                      message: Text("Please be sure everything correct"))
+            })
+        }
     }
 }
 
 #Preview {
-    NewItemView()
+    NewItemView(newItemPresented: Binding(get: {
+        return true
+    }, set: { _ in
+        
+    }))
 }
