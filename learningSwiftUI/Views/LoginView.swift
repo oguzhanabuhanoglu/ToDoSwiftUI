@@ -36,7 +36,7 @@ struct LoginView: View {
                         .autocorrectionDisabled()
                         .autocapitalization(.none)
                 }.frame(height: 200)
-                    .padding(.top, 70)
+                    .padding(.top)
                 
                 //Button
                 BigButton(title: "Log In", action: viewModel.LogIn)

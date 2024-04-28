@@ -11,5 +11,8 @@ class ToDoListItemViewViewModel: ObservableObject {
     
     init(){}
     
+    func done(item: ToDoListItem) {
+        
+    }
     
 }
